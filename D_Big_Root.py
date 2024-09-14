@@ -9,6 +9,7 @@ def main():
     def solver(node):
         if node in memo:
             return memo[node]
+        
         if len(graph[node])==0:
             return values[node]
         ans=0
